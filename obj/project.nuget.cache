@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ygc0coJDCV2lZK30RK7JDIZtUVfO9Wt3VQI+VSp81ikfz2A4mvWxm60h2+F4FjsIf0oJYRQhgtpITy7TY0tB4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\maame\\Documents\\ExcelToVCF\\ExtractAndConvert\\ExtractAndConvert.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maame\\.nuget\\packages\\documentformat.openxml\\2.20.0\\documentformat.openxml.2.20.0.nupkg.sha512",
+    "C:\\Users\\maame\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\maame\\.nuget\\packages\\qrcoder\\1.4.2\\qrcoder.1.4.2.nupkg.sha512",
+    "C:\\Users\\maame\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\maame\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

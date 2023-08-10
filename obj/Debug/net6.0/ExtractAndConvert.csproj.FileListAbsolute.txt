@@ -1,0 +1,12 @@
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\bin\Debug\net6.0\ExtractAndConvert.deps.json
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\bin\Debug\net6.0\ExtractAndConvert.dll
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\bin\Debug\net6.0\ExtractAndConvert.pdb
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\obj\Debug\net6.0\ExtractAndConvert.csproj.AssemblyReference.cache
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\obj\Debug\net6.0\ExtractAndConvert.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\obj\Debug\net6.0\ExtractAndConvert.AssemblyInfoInputs.cache
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\obj\Debug\net6.0\ExtractAndConvert.AssemblyInfo.cs
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\obj\Debug\net6.0\ExtractAndConvert.csproj.CoreCompileInputs.cache
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\obj\Debug\net6.0\ExtractAndConvert.dll
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\obj\Debug\net6.0\refint\ExtractAndConvert.dll
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\obj\Debug\net6.0\ExtractAndConvert.pdb
+C:\Users\maame\Documents\ExcelToVCF\ExtractAndConvert\obj\Debug\net6.0\ref\ExtractAndConvert.dll
