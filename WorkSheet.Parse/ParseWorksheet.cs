@@ -51,15 +51,12 @@ namespace ExtractAndConvert.Parse
                                 rowData.Numbers.AddRange(ParsePhoneNumbers(cellValue));
                                 break;
                             case "H":
-                                rowData.Numbers.AddRange(ParsePhoneNumbers(cellValue));
-                                break;
-                            case "I":
                                 rowData.Emails = ParseEmails(cellValue);
                                 break;
-                            case "J":
+                            case "I":
                                 rowData.Emails.AddRange(ParseEmails(cellValue));
                                 break;
-                            case "K":
+                            case "J":
                                 rowData.Link = cellValue;
                                 break;
                         }
