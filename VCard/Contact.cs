@@ -1,5 +1,6 @@
 namespace ExtractAndConvert.VCard
 {
+    //create a new contact for each row parsed
     public class NewContact
     {
         public string? FirstName { get; set; }
@@ -11,7 +12,7 @@ namespace ExtractAndConvert.VCard
         public string? Photo { get; set; }
         public List<Phone>? Phones { get; set; }
         public List<Address>? Addresses { get; set; }
-        public List<Website>? Websites { get; set; }
+        public string? URL { get; set; }
     }
 
     public class Phone
@@ -27,10 +28,5 @@ namespace ExtractAndConvert.VCard
     public class Address
     {
         public string? Location { get; set; }
-    }
-
-    public class Website
-    {
-        public string? Link { get; set; }
     }
 }

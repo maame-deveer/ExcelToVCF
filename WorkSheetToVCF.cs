@@ -6,10 +6,12 @@ using System.Text.RegularExpressions;
 
 namespace ExtractAndConvert.SheetToVCF
 {
+    //main functionality of the library 
     public class WorkSheetToVCF
     {
         bool completed = false;
 
+        //extract and convert data from worksheet to a .vcf file with a qrcode
         public void ToVCF(string worksheet, string folderPath)
         {
             ParseWorkSheet extract = new ParseWorkSheet();
@@ -30,23 +32,27 @@ namespace ExtractAndConvert.SheetToVCF
                         continue;
                     }
 
+                    //create new contact from parsed row details
                     NewContact contact = new NewContact()
                     {
                         FirstName = extractedData[i].FirstName,
                         LastName = extractedData[i].LastName,
                         Organization = extractedData[i].Institution,
-                        Addresses = new List<Address>()
-                        {
-                            { new Address(){ Location = " "} }
-                        },
+                        Addresses = new List<Address>(),
                         Title = extractedData[i].Position,
                         Phones = new List<Phone>(),
                         Emails = new List<Mail>(),
-                        Websites = new List<Website>()
-                        {
-                            { new Website(){ Link= " "} }
-                        }
+                        URL = extractedData[i].Link
                     };
+
+                    // Check if extractedData[i].Address is not null and contains elements
+                    if (extractedData[i].Address != null && extractedData[i].Address.Any())
+                    {
+                        foreach (var item in extractedData[i].Address)
+                        {
+                            contact.Addresses.Add(new Address { Location = item?.Address ?? "" });
+                        }
+                    }
 
                     // Check if extractedData[i].Numbers is not null and contains elements
                     if (extractedData[i].Numbers != null && extractedData[i].Numbers.Any())
@@ -67,7 +73,7 @@ namespace ExtractAndConvert.SheetToVCF
                     }
 
 
-                    //save 
+                    //create and save  .vcf file
                     string vcardcontents = CreateVCard.VCard(contact);
                     string fileName = $"{contact.FirstName}_{contact.LastName}({contact.Organization}).vcf";
                     string SaveFilePath = Regex.Replace(Path.Combine(folderPath, fileName), @"\s", "");
@@ -77,6 +83,7 @@ namespace ExtractAndConvert.SheetToVCF
             }
         }
 
+        //to help check if the worksheet has been completely parsed
         public bool IsCompleted()
         {
             return completed;

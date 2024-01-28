@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maame\\Documents\\ExcelToVCF\\ExtractAndConvert\\ExtractAndConvert.csproj": {}
+    "C:\\Users\\maame\\Documents\\ExcelToVCF\\ExtractAndConvert.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maame\\Documents\\ExcelToVCF\\ExtractAndConvert\\ExtractAndConvert.csproj": {
+    "C:\\Users\\maame\\Documents\\ExcelToVCF\\ExtractAndConvert.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maame\\Documents\\ExcelToVCF\\ExtractAndConvert\\ExtractAndConvert.csproj",
+        "projectUniqueName": "C:\\Users\\maame\\Documents\\ExcelToVCF\\ExtractAndConvert.csproj",
         "projectName": "ExtractAndConvert",
-        "projectPath": "C:\\Users\\maame\\Documents\\ExcelToVCF\\ExtractAndConvert\\ExtractAndConvert.csproj",
+        "projectPath": "C:\\Users\\maame\\Documents\\ExcelToVCF\\ExtractAndConvert.csproj",
         "packagesPath": "C:\\Users\\maame\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maame\\Documents\\ExcelToVCF\\ExtractAndConvert\\obj\\",
+        "outputPath": "C:\\Users\\maame\\Documents\\ExcelToVCF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -74,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

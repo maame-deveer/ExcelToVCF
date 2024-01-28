@@ -22,9 +22,6 @@ namespace ExtractAndConvert.VCard
             //Title
             vcard.Append($"\nTITLE:{contact.Title}");
 
-            //Photo
-            //vcard.Append($"\nPHOTO;MEDIATYPE#image/jpeg{ImageConverter.ConvertImageToBase64(contact.Photo)}");
-
             //Numbers
             if (contact.Phones != null && contact.Phones.Count > 0)
             {
@@ -52,15 +49,10 @@ namespace ExtractAndConvert.VCard
                 }
             }
 
-            //Links (Websites)
-            if (contact.Websites != null && contact.Websites.Count > 0)
-            {
-                foreach (var website in contact.Websites)
-                {
-                    vcard.Append($"\nURL:{website.Link}");
-                }
-            }
+            //Links
+            vcard.Append($"\nURL:{contact.URL}");
 
+            //end of vcard
             vcard.Append("\nEND:VCARD");
 
             return vcard.ToString();

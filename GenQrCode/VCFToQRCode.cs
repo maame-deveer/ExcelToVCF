@@ -10,15 +10,10 @@ namespace ExtractAndConvert.GenQrCode
         //get image file path
         string imagePath = "";
 
-        /// <summary>
-        /// takes the .vcf file path and the folder path where you want to store the qrcode image
-        /// </summary>
-        /// <param name="vcfFilePath"></param>
-        /// <param name="path"></param>
+        //convert .vcf file to qrcode
         public void ConvertToQRCode(string vcfFilePath, string path)
         {
             // Parse the VCF data
-            //var vcfFile = Deserializer.FromFile(vcfFilePath);
             string cardDetails = File.ReadAllText(vcfFilePath);
             string fileName = Path.GetFileNameWithoutExtension(vcfFilePath);
             string qrcode = Path.Combine(path, fileName + ".png");
@@ -41,6 +36,7 @@ namespace ExtractAndConvert.GenQrCode
             }
         }
 
+        //get the qrcode image path
         public string QrCodePath()
         {
             return imagePath;
