@@ -14,6 +14,7 @@ namespace ExtractAndConvert.SheetToVCF
         //extract and convert data from worksheet to a .vcf file with a qrcode
         public void ToVCF(string worksheet, string folderPath)
         {
+            //declaring variables
             ParseWorkSheet extract = new ParseWorkSheet();
             List<WorkSheetRows> extractedData = extract.ExtractDataFromWorkSheet(worksheet);
             bool isFirstRow = true; // Flag to track the first row
