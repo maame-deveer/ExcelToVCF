@@ -21,7 +21,7 @@ The ExcelToVCF Converter with QR Code Generation is a simple class library desig
 3. In your project, include the library by referencing the ExtractAndConvert.csproj file in your project.
 
 ```bash
-// Example for including the library in your project, i your .csproj file
+// Example for including the library in your project, in your .csproj file
 <ItemGroup>
     <PackageReference Include="./path/to/ExtractAndConvert.csproj"/>
 </ItemGroup>
@@ -29,18 +29,28 @@ The ExcelToVCF Converter with QR Code Generation is a simple class library desig
 ```
 ## Usage
 
-// Example usage
+// Example usage for converting details in worksheet to virtual contact files (.vcf)
 ```bash
-using ExtractAndConvert.Parse;
 using ExtractAndConvert.SheetToVCF;
 
 string worksheet = "./path/to/worksheet";
 string fileSaveDirectory = "./path/to/foldertosavefilesto";
-string imageSaveDirectory = "./path/to/foldertosaveqrcodesto";
 
 //generate contact vcf files
 WorkSheetToVCF toVCF = new WorkSheetToVCF();
-toVCF.ToVCF(worksheet, fileSaveDirectory, imageSaveDirectory);
+toVCF.ToVCF(worksheet, fileSaveDirectory);
+```
+
+//Example usage for converting .vcf file to qrcode
+```bash
+using ExtractAndConvert.GenQrCode;
+
+string vcfFile = "./path/to/vcffile";
+string imageSaveDirectory = "./path/to/foldertosaveqrcodesto";
+
+//generate qrcode
+VCFToQRCode qrCode = new VCFToQRCode();
+qrCode.ConvertToQRCode(vcfFile,imageSaveDirectory);
 ```
 
 ## License
