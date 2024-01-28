@@ -14,7 +14,7 @@ The ExcelToVCF Converter with QR Code Generation is a simple class library desig
 
 ## Installation
 
-1. Download the library directly from this repo as it is currently not available as an npm package.
+1. Download the library directly from this repo as it is currently not available as an nuget package.
 
 2. Extract the downloaded zip file to a location of your choice.
 
