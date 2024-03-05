@@ -12,6 +12,7 @@ The ExcelToVCF Converter with QR Code Generation is a simple class library desig
 - [Usage](#usage)
 - [License](#license)
 
+<a id="installation"></a>
 ## Installation
 
 1. Download the library directly from this repo as it is currently not available as an nuget package.
@@ -27,6 +28,7 @@ The ExcelToVCF Converter with QR Code Generation is a simple class library desig
 </ItemGroup>
 
 ```
+<a id="usage"></a>
 ## Usage
 
 // Example usage for converting details in worksheet to virtual contact files (.vcf)
@@ -52,7 +54,7 @@ string imageSaveDirectory = "./path/to/foldertosaveqrcodesto";
 VCFToQRCode qrCode = new VCFToQRCode();
 qrCode.ConvertToQRCode(vcfFile,imageSaveDirectory);
 ```
-
+<a id="license"></a>
 ## License
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
